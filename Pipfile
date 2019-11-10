@@ -1,0 +1,36 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django-filter = ">=2.0"
+django-polymorphic = ">=2.0"
+django-debug-toolbar = "==2.0"
+factory-boy = "==2.12.0"
+pytest = "==5.2.2"
+pytest-cov = "==2.8.1"
+pytest-django = "==3.6.0"
+pytest-factoryboy = "==2.0.3"
+recommonmark = "==0.6.0"
+sphinx-rtd-theme = "==0.4.3"
+flake8 = "==3.7.9"
+flake8-isort = "==2.7.0"
+isort = "==4.3.21"
+twine = "==2.0.0"
+Faker = "==2.0.3"
+Sphinx = "==2.2.1"
+djangorestframework = "*"
+inflection = "*"
+pluggy = "*"
+py = "*"
+pyparsing = "*"
+pytz = "*"
+sqlparse = "*"
+Django = ">=1.11"
+djangorestframework-jsonapi = {editable = true,path = "."}
+
+[requires]
+python_version = "3.7"
