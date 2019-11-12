@@ -31,6 +31,7 @@ pytz = "*"
 sqlparse = "*"
 Django = ">=1.11"
 djangorestframework-jsonapi = {editable = true,path = "."}
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"

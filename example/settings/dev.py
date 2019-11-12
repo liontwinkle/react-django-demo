@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'example',
     'debug_toolbar',
     'django_filters',
+    'corsheaders',
 ]
 
 TEMPLATES = [
@@ -61,9 +62,16 @@ PASSWORD_HASHERS = ('django.contrib.auth.hashers.UnsaltedMD5PasswordHasher', )
 
 MIDDLEWARE = (
     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 )
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://127.0.0.1:3000'
+]
+
 INTERNAL_IPS = ('127.0.0.1', )
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 JSON_API_FORMAT_FIELD_NAMES = 'camelize'
 JSON_API_FORMAT_TYPES = 'camelize'
